@@ -1,0 +1,11 @@
+version: 2
+
+sources:
+  - name: staging
+    database: my-rides-ro
+    schema: ro_dezoomcamp
+
+    tables:
+      - name: green_rides
+      - name: yellow_rides
+      
