@@ -13,7 +13,7 @@ select
     cast(tpep_dropoff_datetime as timestamp) as dropoff_datetime,
 
     -- trip info
-    store_and_fwd_flag,
+    cast( {{ convertBoolean(store_and_fwd_flag)}} as boolean)  as store_and_fwd_flag,
     cast(passenger_count as integer) as passenger_count,
     cast(trip_distance as numeric) as trip_distance,
     1 as trip_type,
