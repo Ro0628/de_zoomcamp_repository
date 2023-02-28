@@ -7,7 +7,8 @@ sources:
 
     tables:
       - name: green_rides
-      - name: yellow_rides
+      - name: yellow_rides_deduped
+      - name: fhv_external
 models:
     - name: stg_green_tripdata
       description: >
