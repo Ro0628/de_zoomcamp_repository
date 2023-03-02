@@ -75,3 +75,4 @@ from tripdata
 where rn = 1
 
 -- dbt build --m <model.sql> --var 'is_test_run: false'
+ limit 100 
