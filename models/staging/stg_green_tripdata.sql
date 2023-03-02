@@ -46,4 +46,3 @@ where rn = 1
     limit 100
 {% endif %}
 
-
