@@ -52,3 +52,4 @@ from `my-rides-ro`.`ro_dezoomcamp`.`yellow_rides_deduped`
 where vendorid is not null
 
 -- dbt build --m <model.sql> --var 'is_test_run: false'
+ limit 100 
