@@ -3,7 +3,7 @@
 with fhvdata as (
         select
             *, row_number() over (partition by dispatching_base_num, pickup_datetime) as rn
-        from `my-rides-ro`.`ro_dezoomcamp`.`fhv_external`
+        from `my-rides-ro`.`ro_dezoomcamp`.`fhv`
         where dispatching_base_num is not null
     )
 select
