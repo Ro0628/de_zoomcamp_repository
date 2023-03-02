@@ -7,7 +7,8 @@ sources:
 
     tables:
       - name: green_rides
-      - name: yellow_rides
+      - name: yellow_rides_deduped
+      - name: fhv_external
 models:
     - name: stg_green_tripdata
       description: >
@@ -99,7 +100,9 @@ models:
             description: Total amount of all tolls paid in trip.
           - name: Total_amount 
             description: The total amount charged to passengers. Does not include cash tips.
-
+    - name: fact_fhv_trips
+      description: >
+        Taxi trips corresponding to FHV service zones. 
     - name: stg_yellow_tripdata
       description: > 
         Trips made by New York City's iconic yellow taxis. 
